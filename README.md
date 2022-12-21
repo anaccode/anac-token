@@ -1,13 +1,18 @@
-# Sample Hardhat Project
+# AnacCode (ANAC)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Repository with TRC20 tokens issued for  [AnacCode]( https://anaccode.com ) project. 
 
-Try running some of the following tasks:
+##Contracts deployed to Tron network 
+
+| Testnet (shasta) | [TWWLjrHAURWnd3n63GLZQqXn9xxtiBmSVa](https://shasta.tronscan.org/#/contract/TWWLjrHAURWnd3n63GLZQqXn9xxtiBmSVa) |
+|------------------|-----------------------------------------------------------------------------------------------------------------|
+| Mainnet          | [TAMYFwFXSmZpcoBHt3gVJ47nPW4Vih3DWk](https://tronscan.org/#/contract/TAMYFwFXSmZpcoBHt3gVJ47nPW4Vih3DWk)        |
+
+
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.txt
+
+source .env &&  tronbox deploy --network shasta 
+npm run verification
+
 ```
